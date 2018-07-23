@@ -13,7 +13,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ApiUtils {
 
-    static String Base_URL="http://demo.ezipg.com/";
+    static String Base_URL="http://195.133.220.70/";
     public static ApiInterface getInterfaceService() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Base_URL)
@@ -30,7 +30,7 @@ public class ApiUtils {
         return matcher.matches();
     }
 
-    public static String ImageBaseUrl="http://demo.ezipg.com/card_project/";
+    public static String ImageBaseUrl="http://195.133.220.70/card_project/";
 
     public static boolean isEmptyString(String text) {
         return (text == null || text.trim().equals("null") || text.trim()
