@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_weight="0.6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/green">
+        <RelativeLayout
+            android:id="@+id/main"
+            android:clickable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img"
+                android:layout_margin="10dp"
+                android:layout_centerInParent="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/pic"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_above="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/usr_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textSize="18sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:id="@+id/usr_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User Name"/>
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/profile"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/DP10"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"/>
+        </LinearLayout>
+        <View
+            android:background="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+
+      <!--  <View
+            android:background="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/profile"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/DP10"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile"/>
+        </LinearLayout>-->
+        <View
+            android:background="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:id="@+id/logout"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/logout"/>
+
+            <TextView
+                android:layout_marginLeft="@dimen/DP10"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"/>
+        </LinearLayout>
+        <View
+            android:background="@color/green"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

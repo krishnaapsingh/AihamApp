@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/editboxbackground">
+
+
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_margin="5dp"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/image"
+                android:src="@drawable/logon"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:fontFamily="serif-monospace"
+                android:id="@+id/name"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="XYZ DATA"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_below="@+id/name"
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:layout_height="match_parent">
+
+                  <TextView
+                      android:id="@+id/disc"
+                      android:textStyle="bold"
+                      android:textSize="20sp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="50% OFF"/>
+
+                    <TextView
+                        android:textStyle="italic"
+                        android:id="@+id/txtvalid"
+                        android:layout_below="@+id/disc"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valide offer"/>
+                    <TextView
+                        android:id="@+id/valid_date"
+                        android:textStyle="italic"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="20dp"
+                        android:layout_below="@+id/txtvalid"
+                        android:textSize="13sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="28/08/2017"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textSize="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Purchase"
+                        android:drawableTop="@drawable/redcircle"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:background="@drawable/editboxbackground"
+        android:id="@+id/main"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        android:scaleType="fitXY"/>
+        <RelativeLayout
+            android:id="@+id/infoRel"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black_trans">
+
+            <TextView
+                android:gravity="center"
+                android:minLines="1"
+                android:maxLines="2"
+                android:textSize="17sp"
+                android:id="@+id/productname"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/valid_date"
+                android:layout_below="@+id/productname"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/discRelay"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:visibility="gone"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/offer"/>
+
+        <TextView
+            android:id="@+id/disc"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""/>
+    </RelativeLayout>
+
+</RelativeLayout>

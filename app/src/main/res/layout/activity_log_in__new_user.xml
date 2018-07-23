@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_log_in__new_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="3"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.25">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+             >
+
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logon"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:orientation="vertical">
+            <Button
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/white"
+                android:layout_margin="18dp"
+                android:id="@+id/login1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonback"
+                android:text="LogIn"
+                android:onClick="Login_NewUser"/>
+            <Button
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/white"
+                android:layout_margin="18dp"
+                android:id="@+id/new_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonback"
+                android:text="New User"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="bottom"
+                android:onClick="Login_NewUser"
+                />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
